@@ -1,13 +1,13 @@
 {
   "name": "react-aviasales",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint \"src/**/*.{js,jsx}\"",
-    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --fix",
+    "lint": "eslint \"src/**/*.{js,jsx,scss,css,sass}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx,scss,css,sass}\" --fix",
     "prepare": "husky",
     "pretty": "prettier --write ."
   },
