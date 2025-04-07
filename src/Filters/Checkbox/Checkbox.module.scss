@@ -79,3 +79,12 @@
         }
 
     }
+@media (max-width: 768px) {
+ .filterBox{
+    width: auto;
+    max-width: 500px;
+    min-width: 360px;
+    margin: 20px;
+    
+ }
+}

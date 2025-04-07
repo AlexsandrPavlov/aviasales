@@ -7,7 +7,14 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    padding: 10px;
 }
 .mainbox{
     padding-left: 15px;
+}
+@media (max-width: 768px) {
+    .appbox{
+        flex-direction: column;
+    }
+    
 }

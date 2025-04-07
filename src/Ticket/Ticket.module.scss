@@ -1,6 +1,6 @@
 .ticketBox{
-        width: 502px;
-        height: 184px;
+        max-width: 502px;
+        max-height: 184px;
         background-color: white;
         box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
@@ -11,8 +11,8 @@
         &__info{
             display: flex;
            justify-content: space-between;
-           width: 462px;
-           height: 40px;
+           max-width: 462px;
+           max-height: 40px;
            padding: 0px 20px 10px 20px;
 
            &_title{
@@ -43,8 +43,8 @@
         }
 
         &__title{
-        width: 462px;
-        height: 40px;
+        max-width: 462px;
+        max-height: 40px;
         font-family: 'Open Sans';
         font-style: normal;
         font-weight: 500;
@@ -63,3 +63,8 @@
         
         }
     }
+@media (max-width: 768px) {
+    .ticketBox {
+        min-width: 360px;
+    }
+}
