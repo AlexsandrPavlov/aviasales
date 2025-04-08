@@ -47,8 +47,9 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 420px) {
     .Sortbox{
-        min-width: 360px;
+        width: 360px;
+        font-size: 10px;
     }
 }

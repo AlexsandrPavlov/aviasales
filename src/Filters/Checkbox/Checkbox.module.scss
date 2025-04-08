@@ -23,7 +23,7 @@
     }
 
     &__checkboxWrapper {
-        width: 232px;
+        width: auto;
         display: flex;
         flex-direction: column;
     }
@@ -81,10 +81,13 @@
     }
 @media (max-width: 768px) {
  .filterBox{
-    width: auto;
-    max-width: 500px;
-    min-width: 360px;
-    margin: 20px;
-    
+    width: 500px;
+    margin: 25px;
  }
+}
+@media (max-width: 420px) {
+    .filterBox {
+        width: 360px;
+        margin: 25px;
+    }
 }
