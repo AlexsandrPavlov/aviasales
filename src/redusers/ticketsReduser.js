@@ -6,6 +6,7 @@ const initialState = {
   filterTickets: [],
   isFiltered: false,
 };
+
 export const ticketsReduser = (state = initialState, action) => {
   switch (action.type) {
     case ASYNC_ADD_TICKETS: {
@@ -42,13 +43,17 @@ export const ticketsReduser = (state = initialState, action) => {
     case FILTER_BEST_TICKETS: {
       const filterBest = (currentState) => {
         if (action.option === 'cheap') {
-          return currentState.toSorted((a, b) => a.price - b.price);
+          return currentState.sort((a, b) => a.price - b.price);
         }
         if (action.option === 'faster') {
-          return currentState.toSorted((a, b) => a.segments[0].duration - b.segments[0].duration);
+          return currentState.sort((a, b) => a.segments[0].duration - b.segments[0].duration);
         }
         if (action.option === 'opt') {
-          return currentState.toSorted((a, b) => a.segments[0].duration - b.segments[0].duration);
+          return currentState.sort((a, b) => {
+            const totalA = a.price * (a.segments[0].duration + a.segments[1].duration);
+            const totalB = b.price * (b.segments[0].duration + b.segments[1].duration);
+            return totalA - totalB;
+          });
         }
       };
 
