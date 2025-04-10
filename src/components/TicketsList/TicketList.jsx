@@ -29,7 +29,7 @@ export const TicketsList = () => {
 
   const ticketsList =
     !isLoading && emptyData.isEmpty ? (
-      <Empty description={emptyData.message} />
+      <Empty description="Билетов нет" />
     ) : (
       displayedTickets.map((item) => {
         const id = `${item.segments[0].origin}-${item.segments[0].destination}-${item.segments[0].date}`;

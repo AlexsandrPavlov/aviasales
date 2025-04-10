@@ -3,11 +3,11 @@ import {ALL_FILTERS, CURRENT_FILTER} from '../actionsType/actionTypes';
 const initialState = {
   allIsChecked: [],
   checkedList: [
-    {title: 'Все', id: 'all', idTransfer: -1, checked: false},
-    {title: 'Без пересадок', idTransfer: 0, id: 'without_transfer', checked: false},
-    {title: '1 пересадка', idTransfer: 1, id: 'one_transfer', checked: false},
-    {title: '2 пересадки', idTransfer: 2, id: 'two_transfer', checked: false},
-    {title: '3 пересадки', idTransfer: 3, id: 'three_transfer', checked: false},
+    {title: 'Все', id: 'all', idTransfer: -1, checked: true},
+    {title: 'Без пересадок', idTransfer: 0, id: 'without_transfer', checked: true},
+    {title: '1 пересадка', idTransfer: 1, id: 'one_transfer', checked: true},
+    {title: '2 пересадки', idTransfer: 2, id: 'two_transfer', checked: true},
+    {title: '3 пересадки', idTransfer: 3, id: 'three_transfer', checked: true},
   ],
 };
 
