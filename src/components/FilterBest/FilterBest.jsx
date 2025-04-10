@@ -25,7 +25,7 @@ export const FilterBest = () => {
 
       <label htmlFor="medium">
         Самый Оптимальный
-        <input name="radio" id="medium" type="radio" />
+        <input name="radio" id="medium" type="radio" onClick={() => onFilterBestHandle('opt')} />
       </label>
     </div>
   );

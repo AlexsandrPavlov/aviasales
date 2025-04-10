@@ -47,6 +47,9 @@ export const ticketsReduser = (state = initialState, action) => {
         if (action.option === 'faster') {
           return currentState.toSorted((a, b) => a.segments[0].duration - b.segments[0].duration);
         }
+        if (action.option === 'opt') {
+          return currentState.toSorted((a, b) => a.segments[0].duration - b.segments[0].duration);
+        }
       };
 
       const resultFilter = filterBest(state.tickets.flat());
