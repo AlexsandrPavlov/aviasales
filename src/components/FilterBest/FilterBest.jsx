@@ -30,9 +30,3 @@ export const FilterBest = () => {
     </div>
   );
 };
-
-{
-  /* <button onClick={() => onFilterBestHandle('cheap')}>Самый Дешевый</button>
-      <button onClick={() => onFilterBestHandle('faster')}>Самый Быстрый</button>
-      <button>Самый Оптимальный</button> */
-}
