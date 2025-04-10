@@ -22,22 +22,22 @@
     }
   }
 }
-    .show_more {
-      display: grid;
-      grid-column: 2;
-      padding: 10px 10px;
-      background-color: transparent;
-      border: 2px solid #2196f3;
-      width: 100%;
-      color: rgb(0, 0, 0);
-      margin-top: 10px;
-      cursor: pointer;
-  
-      &:hover {
-        background-color: #2196f3;
-        color: white;
-      }
-    }
+.show_more {
+  display: grid;
+  grid-column: 2;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 2px solid #2196f3;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2196f3;
+    color: white;
+  }
+}
 
 .tickets_list {
   font-weight: 500;

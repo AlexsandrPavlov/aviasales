@@ -1,10 +1,10 @@
 import React from 'react';
 import TicketStyles from './MainTicket.module.scss';
 
-import { getCurrentPrice } from '../../assets/getCurrentPrice';
-import { Ways } from './Ways';
+import {getCurrentPrice} from '../../assets/getCurrentPrice';
+import {Ways} from './Ways';
 
-export const Ticket = ({ carrier, price, segments }) => {
+export const Ticket = ({carrier, price, segments}) => {
   const ways = segments.map((item) => {
     const id = `${item.origin}_${item.destination}_${item.date}`;
     return <Ways key={id} date={item.date} carier={carrier} {...item} price={price} />;
