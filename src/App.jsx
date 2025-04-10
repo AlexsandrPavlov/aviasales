@@ -1,22 +1,19 @@
-import './App.scss';
 import React from 'react';
+import logo from './assets/Logo.svg';
+import appStyles from './App.module.scss';
+import {FilterBest} from './components/FilterBest/FilterBest';
+import {TicketsList} from './components/TicketsList/TicketList';
+import {FilterTransfer} from './components/FilterTransfer/FilterTransfer';
 
-import {Checkbox} from './Filters/Checkbox/Checkbox';
-import {Sort} from './Filters/Sort/Sort';
-import {Header} from './Header/Header';
-import {TicketList} from './TicketList/TicketList';
-
-export default function App() {
+export function App() {
   return (
-    <>
-      <Header />
-      <div className="appbox">
-        <Checkbox />
-        <div className="mainbox">
-          <Sort />
-          <TicketList />
-        </div>
-      </div>
-    </>
+    <div className={appStyles.app}>
+      <img src={logo} />
+      <main className={appStyles.main}>
+        <FilterBest />
+        <FilterTransfer />
+        <TicketsList />
+      </main>
+    </div>
   );
 }
