@@ -6,7 +6,10 @@
   display: grid;
   justify-items: center;
 }
-
+img{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 ul,
 li {
   list-style: none;
@@ -31,6 +34,6 @@ button {
     display: grid;
     grid-template-columns: 255px auto;
     grid-template-rows: 50px auto;
-    gap: 10px;
+    gap: 16px;
   }
 }
